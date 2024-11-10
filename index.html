@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>社員抽選アプリ</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="winner-flash"></div>
+    <div class="drum-roll"></div>
+    <div class="container">
+        <h1 id="lotteryTitle">第1回 抽選</h1>
+        <div class="image-container" id="imageContainer"></div>
+        <div class="controls">
+            <button id="startButton" onclick="startLottery()">抽選開始</button>
+            <button id="resetButton" onclick="resetLottery()" disabled>リセット</button>
+        </div>
+        <div id="errorMessage" class="error"></div>
+    </div>
+
+    <script src="/data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
